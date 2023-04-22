@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- --------------------- Created By InCoder --------------------- -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Color Generator - InCoderWeb</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="gradientOutput"></div>
+        <div class="colorOptions">
+            <div class="colorDirection">
+                <p style="font-size: .9rem; margin-bottom: .3rem;">Colors Direction</p>
+                <select name="colorDirection" id="colorDirectionSelect">
+                    <option value="to top">Top</option>
+                    <option value="to top right" selected>Top Right</option>
+                    <option value="to right">Right</option>
+                    <option value="to bottom right">Bottom Right</option>
+                    <option value="to bottom">Bottom</option>
+                    <option value="to bottom left">Bottom Left</option>
+                    <option value="to left">Left</option>
+                    <option value="to top left">Top Left</option>
+                </select>
+            </div>
+            <div class="colorInputs">
+                <p style="font-size: .9rem;">Colors</p>
+                <input type="color" value="#000000" class="colorInput">
+                <input type="color" value="#ff0000" class="colorInput">
+            </div>
+        </div>
+        <textarea id="gradientCode" disabled>background: linear-gradient(#000, red);</textarea>
+        <div class="optionButtons">
+            <button id="randomColor">Random Color</button>
+            <button id="copyBtn">Copy Code</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
